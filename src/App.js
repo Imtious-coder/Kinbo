@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Cart from './pages/Cart';
 import LoginSignup from './pages/LoginSignup';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<LoginSignup />} />
         <Route path="/" element={<Shop />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
     </>
   );
