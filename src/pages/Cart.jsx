@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import CartItems from "../components/CartItems";
+import "../styles/Cart.css";
 
 const Cart = () => {
   return (
-    <div>Cart</div>
-  )
-}
+    <section>
+      <CartItems />
+    </section>
+  );
+};
 
-export default Cart
+export default Cart;
