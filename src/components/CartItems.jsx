@@ -5,7 +5,7 @@ import "../styles/CartItems.css";
 
 const CartItems = () => {
   const {
-    AllProdductData,
+    allProducts,
     cartItems,
     addToCart,
     removeFromCart,
@@ -23,7 +23,7 @@ const CartItems = () => {
         <p>Remove</p>
       </div>
       <hr />
-      {AllProdductData.map((e) => {
+      {allProducts.map((e) => {
         if (cartItems[e.id] > 0) {
           return (
             <div key={e.id}>

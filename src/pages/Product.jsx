@@ -8,9 +8,9 @@ import { ShopContext } from "../context/ShopContext";
 import "../styles/Products.css";
 
 const Product = () => {
-  const { AllProdductData } = useContext(ShopContext);
+  const { allProducts } = useContext(ShopContext);
   const { productId } = useParams();
-  const product = AllProdductData.find((e) => e.id === Number(productId));
+  const product = allProducts.find((e) => e.id === Number(productId));
   return (
     <section>
       <Breadcrums product={product} />

@@ -1,18 +1,26 @@
-import { createContext, useState } from "react";
-import AllProdductData from "../assets/all_product.js";
+import { createContext, useEffect, useState } from "react";
+// import AllProdductData from "../assets/all_product.js";
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
   let cart = {};
-  for (let index = 0; index < AllProdductData.length + 1; index++) {
+  for (let index = 0; index < 300 + 1; index++) {
     cart[index] = 0;
   }
   return cart;
 };
 
 const ShopContextProvider = (props) => {
+  const [allProducts, setAllProducts] = useState([]);
   const [cartItems, setCartItems] = useState(getDefaultCart());
+
+  // ALL PRODUCTS API
+  useEffect(() => {
+    fetch("http://localhost:4000/allproducts")
+      .then((res) => res.json())
+      .then((data) => setAllProducts(data));
+  }, []);
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -25,7 +33,7 @@ const ShopContextProvider = (props) => {
     let totalAmount = 0;
     for (const itemId in cartItems) {
       if (cartItems[itemId] > 0) {
-        let itemInfo = AllProdductData.find(
+        let itemInfo = allProducts.find(
           (product) => product.id === Number(itemId)
         );
         if (itemInfo) {
@@ -49,7 +57,7 @@ const ShopContextProvider = (props) => {
   };
 
   const contextValue = {
-    AllProdductData,
+    allProducts,
     cartItems,
     addToCart,
     removeFromCart,
