@@ -102,12 +102,11 @@
 .navbar-mobile .mobile-menu-hidden {
   width: 100%;
   height: auto;
-  overflow: hidden;
   padding: 50px 0px;
-  background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  right: -100%;
-  transition: right 0.3s ease-in-out;
+  left: -100%;
+  transition: left 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
 }
 .navbar-mobile .mobile-menu-open {
   width: 100%;
@@ -119,8 +118,8 @@
     rgb(32, 38, 238) 91.1%
   );
   position: absolute;
-  right: 0;
-  transition: right 0.3s ease-in-out;
+  left: 0;
+  transition: left 0.3s ease-in-out;
 }
 .navbar-mobile .nav-menu-mobile {
   display: flex;

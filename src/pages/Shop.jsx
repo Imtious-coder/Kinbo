@@ -7,7 +7,7 @@ import Popular from "../components/Popular";
 
 const Shop = () => {
   return (
-    <section>
+    <section style={{ overflow: "hidden" }}>
       <Hero />
       <Popular />
       <Offers />
