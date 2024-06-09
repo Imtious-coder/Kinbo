@@ -1,0 +1,260 @@
+:root {
+  --color-fff: #fff;
+  --color-ff4141: #ff4141;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-1c1b1b: #1c1b1b;
+  --color-hover: #deffc6;
+  --color-disable: #a3a3a3;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* BUTTONS STARTS HERE */
+.button-black {
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 25px;
+  background-color: var(--color-232f3e);
+  transition: 0.2s all ease-in-out;
+}
+.button-black:hover {
+  background-color: var(--color-ff4141);
+}
+.button-orange {
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 25px;
+  background-color: var(--color-ff4141);
+  transition: 0.2s all ease-in-out;
+}
+.button-orange:hover {
+  background-color: var(--color-232f3e);
+}
+/* BUTTONS ENDS HERE */
+
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.pointer {
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .xs-hidden {
+    display: none;
+  }
+  .xs-block {
+    display: block;
+  }
+  .xs-flex {
+    display: flex;
+  }
+  .xs-flex-column {
+    flex-direction: column;
+  }
+  .xs-flex-row {
+    flex-direction: row;
+  }
+  .xs-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .xs-justify-center {
+    justify-content: center;
+  }
+  .xs-space-between {
+    justify-content: space-between;
+  }
+  .xs-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm-hidden {
+    display: none;
+  }
+  .sm-block {
+    display: block;
+  }
+  .sm-flex {
+    display: flex;
+  }
+  .sm-flex-column {
+    flex-direction: column;
+  }
+  .sm-flex-row {
+    flex-direction: row;
+  }
+  .sm-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .sm-justify-center {
+    justify-content: center;
+  }
+  .sm-space-between {
+    justify-content: space-between;
+  }
+  .sm-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-hidden {
+    display: none;
+  }
+  .md-block {
+    display: block;
+  }
+  .md-flex {
+    display: flex;
+  }
+  .md-flex-column {
+    flex-direction: column;
+  }
+  .md-flex-row {
+    flex-direction: row;
+  }
+  .md-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .md-justify-center {
+    justify-content: center;
+  }
+  .md-space-between {
+    justify-content: space-between;
+  }
+  .md-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-hidden {
+    display: none;
+  }
+  .lg-block {
+    display: block;
+  }
+  .lg-flex {
+    display: flex;
+  }
+  .lg-flex-column {
+    flex-direction: column;
+  }
+  .lg-flex-row {
+    flex-direction: row;
+  }
+  .lg-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .lg-justify-center {
+    justify-content: center;
+  }
+  .lg-space-between {
+    justify-content: space-between;
+  }
+  .lg-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl-hidden {
+    display: none;
+  }
+  .xl-block {
+    display: block;
+  }
+  .xl-flex {
+    display: flex;
+  }
+  .xl-flex-column {
+    flex-direction: column;
+  }
+  .xl-flex-row {
+    flex-direction: row;
+  }
+  .xl-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .xl-justify-center {
+    justify-content: center;
+  }
+  .xl-space-between {
+    justify-content: space-between;
+  }
+  .xl-items-center {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .xxl-hidden {
+    display: none;
+  }
+  .xxl-block {
+    display: block;
+  }
+  .xxl-flex {
+    display: flex;
+  }
+  .xxl-flex-column {
+    flex-direction: column;
+  }
+  .xxl-flex-row {
+    flex-direction: row;
+  }
+  .xxl-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .xxl-justify-center {
+    justify-content: center;
+  }
+  .xxl-space-between {
+    justify-content: space-between;
+  }
+  .xxl-items-center {
+    align-items: center;
+  }
+}
