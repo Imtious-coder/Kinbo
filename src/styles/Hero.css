@@ -106,3 +106,41 @@
     justify-content: space-around;
   }
 }
+@media (min-width: 1400px) {
+  .hero {
+    justify-content: space-around;
+  }
+  .hero .hero-left {
+    gap: 20px;
+    line-height: 1.1;
+  }
+  .hero .hero-left h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .hero .hero-left p {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .hero .hero-hand-icon {
+    gap: 20px;
+  }
+  .hero .hero-hand-icon img {
+    width: 120px;
+  }
+  .hero .hero-latest-btn {
+    gap: 15px;
+    padding: 20px 50px;
+    margin-top: 30px;
+    background-color: var(--color-ff4141);
+    color: var(--color-fff);
+    font-size: 18px;
+  }
+  .hero .hero-right img {
+    transform: scale(2);
+  }
+  .hero .hero-right img:hover {
+    transform: scale(2.2);
+  }
+}
