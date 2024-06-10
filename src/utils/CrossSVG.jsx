@@ -5,8 +5,8 @@ const CrossSVG = () => {
     <section>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="35px"
-        height="35px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
       >

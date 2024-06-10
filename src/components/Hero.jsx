@@ -1,7 +1,6 @@
 import React from "react";
-import arrowIcon from "../assets/arrow.png";
 import handIcon from "../assets/hand_icon.png";
-import heroImage from "../assets/hero_image.png";
+import heroImage from "../assets/himage.png";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -18,11 +17,12 @@ const Hero = () => {
           <p>for everyone</p>
         </div>
         <div className="hero-latest-btn">
-          <div>Latest Collection</div>
-          <img src={arrowIcon} alt="ArrowIcon" />
+          <div>Latest Collection {">"}</div>
+          {/* <img src={arrowIcon} alt="ArrowIcon" /> */}
         </div>
       </div>
-      <div className="hero-right">
+      {/* IMAGE */}
+      <div className="hero-right hidden md-flex">
         <img src={heroImage} alt="HeroImage" />
       </div>
     </section>

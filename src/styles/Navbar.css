@@ -18,6 +18,7 @@
 .nav-top-stripe p,
 .nav-top-stripe a {
   margin: 0px;
+  font-size: 13px;
   color: var(--color-fff);
   text-decoration: none;
 }
@@ -29,12 +30,12 @@
   gap: 10px;
 }
 .nav-logo img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 .nav-logo p {
   color: #171717;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -96,7 +97,7 @@
   box-shadow: 0 1px 3px -2px black;
 }
 .navbar-mobile nav {
-  padding: 16px 50px;
+  padding: 16px 20px;
   box-shadow: 0 1px 3px -2px black;
 }
 .navbar-mobile .mobile-menu-hidden {
@@ -164,6 +165,22 @@
 /* NAVBAR FOR MOBILE  */
 
 /* MEDIA QUERY */
+@media (min-width: 480px) {
+  .nav-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav-logo p {
+    font-size: 28px;
+  }
+  .nav-top-stripe p,
+  .nav-top-stripe a {
+    font-size: 16px;
+  }
+  .navbar-mobile nav {
+    padding: 16px 40px;
+  }
+}
 @media (min-width: 1024px) {
   .nav-menu {
     gap: 50px;
