@@ -1,5 +1,5 @@
 .item {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 20px 0%;
   padding: 10px;
@@ -36,6 +36,13 @@
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  color: #374152;
+}
+.item a {
+  text-decoration: none;
+}
+.item a:hover {
+  text-decoration: underline;
 }
 .item h5 {
   width: 100%;
@@ -78,11 +85,11 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   .item {
-    width: 40%;
+    width: 45%;
     height: auto;
-    margin: 20px 0%;
+    margin: 0px 0% 20px 0px;
     padding: 10px;
     border-radius: 5px;
     background: var(--color-fff);
@@ -93,7 +100,6 @@
   .item {
     width: 29%;
     height: auto;
-    margin: 20px 0%;
     padding: 10px;
     border-radius: 5px;
     background: var(--color-fff);
@@ -102,10 +108,10 @@
 }
 @media (min-width: 1024px) {
   .item {
-    width: 18%;
+    width: 20%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .item {
     width: 16%;
   }

@@ -16,7 +16,9 @@ const Item = ({ id, image, name, new_price, old_price, category }) => {
         </div>
       </div>
       <h6>{category}</h6>
-      <p>{name}</p>
+      <Link to={`/product/${id}`}>
+        <p title={name}>{name}</p>
+      </Link>
       <div className="reviews">
         <StarSVG />
         <StarSVG />

@@ -14,11 +14,11 @@ const NewCollections = () => {
   
   return (
     <section className="newCollections">
-      <h1>NEW COLLECTIONS</h1>
+      <h1>New Collections</h1>
       <div className="line"> {"n"}</div>
       <div className="collections">
         {newCollection.map(
-          ({ id, name, image, new_price, old_price }, index) => {
+          ({ id, name, image, new_price, old_price, category }, index) => {
             return (
               <Item
                 key={index}
@@ -27,6 +27,7 @@ const NewCollections = () => {
                 image={image}
                 new_price={new_price}
                 old_price={old_price}
+                category={category}
               />
             );
           }
