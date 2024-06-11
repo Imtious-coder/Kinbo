@@ -9,17 +9,18 @@
 /* LEFT SECTION */
 .hero .hero-left {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  line-height: 1.1;
+  line-height: 1.5;
 }
 .hero .hero-left h2 {
   color: #090909;
   font-size: 16px;
   font-weight: 600;
 }
-.hero .hero-left P {
+.hero .hero-left p {
   color: #171717;
   font-size: 28px;
   font-weight: 700;
@@ -33,6 +34,7 @@
   width: 30px;
 }
 .hero .hero-latest-btn {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,8 +77,9 @@
     padding: 0px 80px;
   }
   .hero .hero-left {
+    width: auto;
     gap: 20px;
-    line-height: 1.1;
+    line-height: 1.5;
   }
   .hero .hero-left h2 {
     font-size: 22px;
@@ -93,6 +96,7 @@
     width: 80px;
   }
   .hero .hero-latest-btn {
+    width: auto;
     gap: 15px;
     padding: 20px 50px;
     margin-top: 30px;

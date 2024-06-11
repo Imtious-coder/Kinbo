@@ -1,29 +1,112 @@
 .item {
-  width: 20%;
-  margin: 0 2.5%;
+  width: 80%;
+  height: auto;
+  margin: 20px 0%;
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--color-fff);
+  overflow: hidden;
+}
+.item .image-fav {
+  position: relative;
+  padding: 10px;
   transition: 0.35s all ease-in-out;
 }
+.favIcon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.favIcon:hover {
+  transform: scale(1.2);
+}
+.item h6 {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-ff4141);
+  text-transform: capitalize;
+}
 .item p {
-  margin: 6px 0px;
+  margin: 10px 0px;
+  max-height: 50px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.item h5 {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 0px;
+  text-align: center;
+  opacity: 0.5;
 }
 .item img {
   width: 100%;
+  height: 70%;
+  border-radius: 5px;
 }
 .item-prices {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
   gap: 20px;
+  margin: 10px 0px;
 }
-.item-price-new {
+.item-price-old {
   color: #374152;
   font-size: 18px;
   font-weight: 600;
 }
 .item-price-new {
   color: #8c8c8c;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: line-through;
 }
-.item:hover {
-  transform: scale(1.05);
+.image-fav:hover {
+  transform: scale(1.08);
+}
+.item .reviews {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 480px) {
+  .item {
+    width: 40%;
+    height: auto;
+    margin: 20px 0%;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--color-fff);
+    transition: 0.35s all ease-in-out;
+  }
+}
+@media (min-width: 768px) {
+  .item {
+    width: 29%;
+    height: auto;
+    margin: 20px 0%;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--color-fff);
+    transition: 0.35s all ease-in-out;
+  }
+}
+@media (min-width: 1024px) {
+  .item {
+    width: 18%;
+  }
+}
+@media (min-width: 1200px) {
+  .item {
+    width: 16%;
+  }
 }

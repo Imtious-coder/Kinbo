@@ -11,14 +11,14 @@ const Popular = () => {
       .then((res) => res.json())
       .then((data) => setPopularProduct(data));
   }, []);
-  
+
   return (
     <section className="popular">
-      <h1>POPULAR IN WOMEN</h1>
+      <h1>Popular In Women</h1>
       <div className="line"> {"n"}</div>
       <div className="popular-item">
         {popularProduct.map(
-          ({ id, name, image, new_price, old_price }, index) => {
+          ({ id, name, image, new_price, old_price, category }, index) => {
             return (
               <Item
                 key={index}
@@ -27,6 +27,7 @@ const Popular = () => {
                 image={image}
                 new_price={new_price}
                 old_price={old_price}
+                category={category}
               />
             );
           }
