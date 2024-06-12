@@ -1,17 +1,20 @@
 import React from "react";
+import exclusive_image from "../assets/exclusive_img.png";
 import "../styles/Offers.css";
-import exclusive_image from "../assets/exclusive_image.png"
 
 const Offers = () => {
   return (
-    <section className="offers">
-      <div className="offers_left">
-        <h1>Exclusive</h1>
-        <h1>Offers For You</h1>
-        <p>ONLY ON BEST SELLERS PRODUCTS</p>
-        <button>Check Now</button>
+    <section className="offer-banner">
+      <div className="offer-left">
+        <p>Exclusive</p>
+        <p>Offers For You</p>
+        <h2>ONLY ON BEST SELLERS PRODUCTS </h2>
+        <div className="btn">
+          <div>Check Now</div>
+        </div>
       </div>
-      <div className="offers_right">
+      {/* IMAGE */}
+      <div className="offer-right hidden md-flex">
         <img src={exclusive_image} alt="exclusive_image" />
       </div>
     </section>
